@@ -30,6 +30,8 @@ class Login1 extends StatelessWidget {
                   border: OutlineInputBorder(),
                   labelText: 'Phone Number',
                   hintText: 'Enter valid phone number as +255612345678  '),
+              autofocus: true,
+              keyboardType: TextInputType.number,
             ),
           )
         ],
