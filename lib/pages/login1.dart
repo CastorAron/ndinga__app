@@ -33,6 +33,7 @@ class Login1 extends StatelessWidget {
               autofocus: true,
               keyboardType: TextInputType.number,
               textInputAction: TextInputAction.send,
+              maxLength: 14,
             ),
           ),
           ElevatedButton(

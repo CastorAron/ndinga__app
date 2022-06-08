@@ -101,6 +101,7 @@ class BodyHome extends StatelessWidget {
           endIndent: 20,
         ),
         ListTile(
+          // onTap: () => Navigator.push(context, MaterialPageRoute(builder: MyMap()),
           leading: const Icon(
             Icons.car_rental,
             color: Colors.white,
@@ -165,8 +166,14 @@ class BodyHome extends StatelessWidget {
               fixedSize: Size(200, 60),
               shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(20))),
-
-          onPressed: () => print('Am trying'),
+          // Navigator.push(
+          // context,
+          //   MaterialPageRoute(builder: (context) => const SecondRoute()),
+          //     );
+          onPressed: () => Navigator.push(
+            context,
+            MaterialPageRoute(builder: (context) => const MyMap()),
+          ),
           // ignore: prefer_const_constructors
 
           child: Row(
