@@ -17,6 +17,10 @@ class MyMap extends StatelessWidget {
         padding: EdgeInsets.all(19),
         child: Stack(
           children: <Widget>[
+            // ignore: prefer_const_constructors
+            Divider(
+              thickness: 50,
+            ),
             FlutterMap(
               options: MapOptions(
                 center: LatLng(51.5, -0.09),
